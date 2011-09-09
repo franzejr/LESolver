@@ -24,7 +24,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->solveButton,SIGNAL(clicked()),this,SLOT(solveLinearEquation()));
     connect(ui->clearButton,SIGNAL(clicked()),ui->historyText,SLOT(clear()));
 
-    //Colocando os elementos no UI
+    //Putting the UI Elements
             for(int i = 0; i < 3; i++){
                 for(int j = 0; j < 3; j++){
                     coeficientsMatrix[i][j] = new QDoubleSpinBox();
